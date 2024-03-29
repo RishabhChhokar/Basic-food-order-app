@@ -1,7 +1,7 @@
 import classes1 from "./MenuList.module.css";
 import classes2 from "./MenuSummary.module.css";
 import Card from "../UI/Card"
-import MealsList from "./MealsList"
+import MealsList from "./MealsList/MealsList"
 const Meals = () => {//Main Component to export
   return (
     <>
