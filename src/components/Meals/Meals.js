@@ -1,6 +1,7 @@
 import classes1 from "./MenuList.module.css";
 import classes2 from "./MenuSummary.module.css";
-
+import Card from "../UI/Card"
+import MealsList from "./MealsList"
 const Meals = () => {//Main Component to export
   return (
     <>
@@ -31,28 +32,37 @@ const PRESET_MEALS = [
     id: "m1",
     name: "Saahi Paneer",
     description: "Panner masala curry with rice and naan.",
-    price: 22.99,
+    price: 500
   },
   {
     id: "m2",
     name: "Aloo Paratha",
     description: "Crispy aloo partha served with butter.",
-    price: 16.5,
+    price: 300
   },
   {
     id: "m3",
     name: "Butter Chicken",
     description: "Delicious Butter Chicken served with rice.",
-    price: 12.99,
+    price: 600
   },
 ];
 
 const MenuList = () => {
-  const mealsList = PRESET_MEALS.map((meal) => <li>{meal.name}</li>);
+  const mealsList = PRESET_MEALS.map((meal) => (
+    <MealsList
+      key={meal.id}
+      name={meal.name}
+      description={meal.description}
+      price={meal.price}
+    />
+  ));
 
   return (
     <section className={classes1.meals}>
-      <ul>{mealsList}</ul>
+      <Card>
+        <ul>{mealsList}</ul>
+      </Card>
     </section>
   );
 };
