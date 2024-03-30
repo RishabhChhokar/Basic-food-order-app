@@ -32,19 +32,19 @@ const PRESET_MEALS = [
     id: "m1",
     name: "Saahi Paneer",
     description: "Panner masala curry with rice and naan.",
-    price: 500
+    price: 500.00
   },
   {
     id: "m2",
     name: "Aloo Paratha",
     description: "Crispy aloo partha served with butter.",
-    price: 300
+    price: 300.00
   },
   {
     id: "m3",
     name: "Butter Chicken",
     description: "Delicious Butter Chicken served with rice.",
-    price: 600
+    price: 600.00
   },
 ];
 
@@ -52,6 +52,7 @@ const MenuList = () => {
   const mealsList = PRESET_MEALS.map((meal) => (
     <MealsList
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}
