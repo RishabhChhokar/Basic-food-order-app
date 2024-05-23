@@ -3,7 +3,8 @@ import Header from "./components/Layout/Header";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
 import { useState } from "react";
-function App() {
+
+const App = () => {
   const [isCartVisible, setIsCartVisible] = useState(false);
 
   const showCartHandler = () => {
