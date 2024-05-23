@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Basic%20food%20order%20app/static/css/main.6d94e7f8.css",
+    "main.js": "/Basic%20food%20order%20app/static/js/main.122d998a.js",
+    "static/media/Header image.jpg": "/Basic%20food%20order%20app/static/media/Header image.0d7afbf9543897d646eb.jpg",
+    "index.html": "/Basic%20food%20order%20app/index.html",
+    "main.6d94e7f8.css.map": "/Basic%20food%20order%20app/static/css/main.6d94e7f8.css.map",
+    "main.122d998a.js.map": "/Basic%20food%20order%20app/static/js/main.122d998a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d94e7f8.css",
+    "static/js/main.122d998a.js"
+  ]
+}
